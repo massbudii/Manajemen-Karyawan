@@ -16,19 +16,20 @@ class PegawaiSeeder extends Seeder
      */
     public function run(): void
     {
-        $faker = Faker::create('id_ID');
+        Pegawai::factory(50)->create();
+        // $faker = Faker::create('id_ID');
 
-        for ($i = 0; $i < 25; $i++) {
-            Pegawai::create([
-                'nama_pegawai' => $faker->name(),
-                'nik' => $faker->randomNumber(9),
-                'alamat' => $faker->address(),
-                'umur' => $faker->numberBetween(18,60),
-                'tanggal_lahir' => $faker->date(),
-                'tempat_lahir' => $faker->city(),
-                'jenis_kelamin' => $faker->randomElement(['laki-laki', 'perempuan']),
+        // for ($i = 0; $i < 25; $i++) {
+        //     Pegawai::create([
+        //         'nama_pegawai' => $faker->name(),
+        //         'nik' => $faker->randomNumber(9),
+        //         'alamat' => $faker->address(),
+        //         'umur' => $faker->numberBetween(18,60),
+        //         'tanggal_lahir' => $faker->date(),
+        //         'tempat_lahir' => $faker->city(),
+        //         'jenis_kelamin' => $faker->randomElement(['laki-laki', 'perempuan']),
 
-            ]);
-        }
+        //     ]);
+        // }
     }
 }

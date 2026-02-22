@@ -14,6 +14,13 @@
                      <span> Dashboard </span>
                  </a>
              </li>
+             <li>
+                 <a href="{{ route('pegawai') }}">
+                     <i class="fe-airplay"></i>
+                     <span class="badge badge-danger badge-pill float-right">3</span>
+                     <span> Data Pegawai </span>
+                 </a>
+             </li>
 
 
          </ul>
