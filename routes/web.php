@@ -14,7 +14,21 @@ Route::get('/dashboard', function () {
 // Route::get('/pegawai', )
 
 Route::get('/Data Pegawai', [PegawaiController::class, 'index']
-)->name('pegawai');
+)->name('pegawai.index');
 
 Route::get('/pegawai/create', [PegawaiController::class, 'create']
 )->name('pegawai.create');
+
+Route::post('/pegawai/store', [PegawaiController::class, 'store']
+)->name('pegawai.store');
+
+Route::get('/pegawai/{pegawai}/edit', [PegawaiController::class, 'edit']
+)->name('pegawai.edit');
+
+Route::put('/pegawai/{pegawai}/update', [PegawaiController::class, 'update']
+)->name('pegawai.update');
+
+Route::delete('/pegawai/{id}/destroy', [PegawaiController::class, 'destroy']
+)->name('pegawai.destroy');
+
+

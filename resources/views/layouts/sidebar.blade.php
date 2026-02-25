@@ -15,7 +15,7 @@
                  </a>
              </li>
              <li>
-                 <a href="{{ route('pegawai') }}">
+                 <a href="{{ route('pegawai.index') }}">
                      <i class="fe-airplay"></i>
                      <span class="badge badge-danger badge-pill float-right">3</span>
                      <span> Data Pegawai </span>
